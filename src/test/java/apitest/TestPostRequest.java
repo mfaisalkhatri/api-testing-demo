@@ -10,7 +10,7 @@ public class TestPostRequest {
     @Test
     public void testCreateOrder () {
 
-        String order = "[{\"user_id\": \"1\"," + "\"product_id\": \"1\"," + "\"product_name\": \"iPhone\"," + "\"product_amount\": 500.00," + "\"qty\": 1," + "\"tax_amt\": 5.99," + "\"total_amt\": 505.99}]";
+        String order = "[{\"user_id\": \"2\"," + "\"product_id\": \"1\"," + "\"product_name\": \"iPhone\"," + "\"product_amount\": 501.00," + "\"qty\": 1," + "\"tax_amt\": 5.99," + "\"total_amt\": 506git .99}]";
 
         given ().contentType (ContentType.JSON)
             .when ()
