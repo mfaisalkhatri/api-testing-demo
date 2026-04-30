@@ -20,11 +20,11 @@ public class TestPostRequest {
             .post ("http://localhost:3004/addOrder")
             .then ()
             .log ()
-            .all ()
+            .body ()
             .statusCode (201)
             .and ()
             .assertThat ()
-            .body ("message", equalTo ("Orders added successfully!"));
+            .body ("message", equalTo ("Orders added successfully!"))
     }
 
 }
